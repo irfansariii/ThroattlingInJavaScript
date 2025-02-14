@@ -1,11 +1,12 @@
 Debouncing in JavaScript
-Last Updated : 10 Jan, 2025
+
 Debouncing is a technique in programming that helps improve the performance of web applications by controlling the frequency at which time-consuming tasks are triggered. If a task is triggered too often—like when a user types quickly or rapidly clicks a button—it can lead to performance issues. Debouncing provides a solution by limiting how frequently a function can be executed.
 
 What is Debouncing in JavaScript?
 In JavaScript, debouncing is commonly used to enhance browser performance by ensuring that expensive operations (like complex calculations, API calls, or DOM updates) are executed only when necessary. JavaScript operates in a single-threaded environment, meaning it can only handle one operation at a time. When certain actions are triggered too frequently, such as during continuous scrolling or typing, it can overload the browser and cause sluggish performance.
 
 Approach
+
 The button is linked to an event listener that invokes the debounce function when the button is clicked.
 The debounce function takes two parameters: a function to be debounced and a delay in milliseconds.
 Inside the debounce function, a variable named debounceTimer is declared. This variable is crucial for executing the debounced function after a specified delay.
