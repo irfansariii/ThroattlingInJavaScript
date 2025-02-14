@@ -6,6 +6,7 @@ JavaScript Throttling******
 Throttling is a technique used to limit the number of times a function can be executed in a given time frame. It’s extremely useful when dealing with performance-heavy operations, such as resizing the window or scrolling events, where repeated triggers can lead to performance issues.
 
 
+
 function throttle(fn, delay) {
     let lastTime = 0;
     return function (...args) {
